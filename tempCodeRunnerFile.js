@@ -1,1 +1,0 @@
-const price=getprice(5);
