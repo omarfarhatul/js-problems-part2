@@ -12,9 +12,11 @@ console.log(price);
 
 
 function getsecond(numbers){
-    console.log(typeof numbers);
+    if(Array.isArray(numbers) === false){
+        return 'Please provide an array.';
+    }
     const second = numbers[1];
     return second;
 }
-const second=getsecond([1, 3, 56]);
+const second=getsecond([41, 23, 56]);
 console.log(second);
