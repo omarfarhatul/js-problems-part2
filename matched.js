@@ -11,9 +11,13 @@ const products = [
 // }
 
 function matchedProducts(products, search){
+    const matched =[];
     for(const product of products){
-        console.log(product.name.includes(search));
+        if(product.name.includes(search)){
+            matched.push(product);
+        }
     }
+    return matched;
 }
 
 const result = matchedProducts(products, 'phone');
